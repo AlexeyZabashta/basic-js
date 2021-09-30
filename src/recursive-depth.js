@@ -13,8 +13,24 @@ import { NotImplementedError } from '../extensions/index.js';
  *
  */
 export default class DepthCalculator {
-  calculateDepth(/* arr */) {
-    throw new NotImplementedError('Not implemented');
-    // remove line with error and write your code here
+  calculateDepth(arr) {
+    
+  function rekurs(arr){
+  let count=0; 
+  for (let i=0;i<arr.length;i++){
+  let aI=arr[i];
+  if (Array.isArray(aI)){
+  count+=rekurs(aI)+1;
+  //alert('рекурсия '+' count= '+count);	
   }
+    
+  else {
+  //alert('не рекурсия '+' count= '+count);
+   }
+  }
+  
+  return count;
+  }
+  return rekurs(arr)+1;
+    }
 }

@@ -16,7 +16,7 @@ import { NotImplementedError } from '../extensions/index.js';
 export default function createDreamTeam(members) {
   let mass=[];
   for (let m=0;m<members.length;m++){
-    if (typeof val === "string" || val instanceof String)
+    if (typeof members[m] === "string" || members[m] instanceof String)
       mass.push(members[m]);
   }
 
