@@ -29,8 +29,7 @@ export default function repeater(str, options) {
   {var add=options['addition'];}
 
   if ('additionRepeatTimes' in options)
-    {var additRT=Number(options['additionRepeatTimes']);
-      console.log(typeof additRT);}
+    {var additRT=Number(options['additionRepeatTimes']);}
 
   if ('additionSeparator' in options)
   {var additSep=options['additionSeparator'];}
